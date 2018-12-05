@@ -2,6 +2,9 @@
 // for (let button of buttons) {
 //     button.addEventListener('click')
 // }
+let display = ""
+let output = document.getElementById('screen')
+
 
 document.getElementById('seven').addEventListener('click', function() {
     document.getElementById('screen').innerText += '7'})
@@ -42,7 +45,17 @@ document.getElementById('subtract').addEventListener('click', function() {
 document.getElementById('multiply').addEventListener('click', function() {
     document.getElementById('screen').innerText += '*'})
 
+document.getElementById('decimal').addEventListener('click', function() {
+    document.getElementById('screen').innerText += '.'})
+
+document.getElementById('zero').addEventListener('click', function() {
+    document.getElementById('screen').innerText += '0'})
+
 document.getElementById('clear').addEventListener('click', function() {
-    cleared = ""
-    document.getElementById('screen').innerText = cleared
-})
+    display = "";
+    document.getElementById('screen').innerText = display})
+
+function equal() {
+    document.getElementById('screen').innerText = eval(document.getElementById('screen').innerText).toFixed(4)
+}
+
