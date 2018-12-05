@@ -1,7 +1,4 @@
-// let buttons = document.getElementsByClassName('button')
-// for (let button of buttons) {
-//     button.addEventListener('click')
-// }
+
 let display = ""
 let output = document.getElementById('screen')
 
