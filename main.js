@@ -54,5 +54,6 @@ document.getElementById('clear').addEventListener('click', function() {
 
 function equal() {
     document.getElementById('screen').innerText = eval(document.getElementById('screen').innerText).toFixed(4)
+    // would love to edit the toFixed so that it only applies when the eval returns a float
 }
 
